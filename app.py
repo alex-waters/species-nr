@@ -4,7 +4,7 @@ from flask import Flask, render_template, send_from_directory, request
 # instantiate app with static path to help PA distributed filesystem
 app = Flask(
     __name__,
-    static_url_path='/home/anw/mysite/species-nr/static/'
+#    static_url_path='/home/anw/mysite/species-nr/static/'
 )
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
