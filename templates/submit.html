@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Submission example</title>
+    <style>
+        form {
+          width: 420px;
+        }
+
+        div {
+          margin-bottom: 20px;
+        }
+
+        label {
+          display: inline-block;
+          width: 240px;
+          text-align: right;
+          padding-right: 10px;
+        }
+
+        button, input {
+          float: right;
+        }
+    </style>
+</head>
+<body>
+<form method="post" action="{{ url_for('hello') }}" enctype="multipart/form-data">
+    <div>
+        <label for="what">What did you see? </label>
+        <input name="what" type="text" id="what" required="required">
+    </div>
+    <div>
+        <label for="many">How many? </label>
+        <input name="many" type="text" id="many">
+    </div>
+<!--    <div>-->
+<!--        <label for="photo">If you'd like, add a photo here </label>-->
+<!--        <input name="photo" type="file" inputmode="file" id="photo">-->
+<!--    </div>-->
+    <div>
+        <button>Send my observation</button>
+    </div>
+</form>
+</body>
+</html>
